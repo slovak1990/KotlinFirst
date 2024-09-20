@@ -15,6 +15,16 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/
+/out/
+/build/
+
+# Игнорировать системные файлы
+.DS_Store
+Thumbs.db
+
+# Игнорировать зависимости, которые не нужно отслеживать
+/node_modules/
 
 ### Eclipse ###
 .apt_generated
@@ -37,6 +47,3 @@ bin/
 
 ### VS Code ###
 .vscode/
-
-### Mac OS ###
-.DS_Store
