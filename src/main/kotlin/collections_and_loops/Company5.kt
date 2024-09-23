@@ -1,0 +1,1 @@
+data class Company5(val name: String, val department5s: List<Department5>)

@@ -1,0 +1,1 @@
+data class Car5(val brand: String, val model: String, val cost: Double)
