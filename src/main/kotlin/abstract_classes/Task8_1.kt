@@ -1,5 +1,6 @@
 package abstract_classes
 
+import interfaces.Movable
 import kotlin.time.times
 
 /*
@@ -34,7 +35,7 @@ abstract class Figure(val color: String) {
     }
 }
 
-class Rectangle(color: String, val width: Double, val height: Double) : Figure(color) {
+class Rectangle(color: String, val width: Double, val height: Double) : Figure(color), Movable {
     override fun area(): Double {
         return width * height
     }
@@ -48,7 +49,7 @@ class Rectangle(color: String, val width: Double, val height: Double) : Figure(c
     }
 }
 
-class Round(color: String, val radius: Double) : Figure(color) {
+class Round(color: String, val radius: Double) : Figure(color), Movable {
     override fun area(): Double {
         return Math.PI * radius * radius
     }
